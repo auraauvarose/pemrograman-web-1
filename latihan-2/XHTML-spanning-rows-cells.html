@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	  <title>XHTML: A Simple Table with Spanning Rows and Cells</title>
+	</head>
+	<body>
+		<!-- 
+			Latihan 1: Introduction to XHTML
+			Nama Mhs.: 
+			1. R. Aura Auvarose Endica Saebani -  2257400040
+			2. Eka Bogi S - 2257400042
+			3. ⁠Muhammad Roy C.S - 2257400058
+			4. Karan Wahyu.p - 2257400053
+			5. Alvindra Syahrul H.- 2257400056
+			6. Muhamad surya P - 2257400044
+			7. Arendra Surya Pradigda Putraning Bawono - 2257400046
+			8. Luis Bara K - 2257400048
+		-->
+		
+		<h1>How Tables Work</h1>
+
+		<p>The table element defines the beginning and end of a table. Within the table element are table row elements (&lt;tr&gt;&lt;/tr&gt;), and nested within those are table cell elements (&lt;td&gt;&lt;/td&gt;). The actual content is placed inside the td elements.</p>
+
+		<p>This is a simple table with two rows containing two cells each. This table uses border attribute (the value set to 1) and width attribute (the value set to 100%).</p>
+
+		<table border="1" width="100%">
+			<tr>
+				<td>Cell one</td>
+				<td>Cell two</td>
+			</tr>
+			<tr>
+				<td>Cell three</td>
+				<td>Cell four</td>
+			</tr>
+		</table>
+
+		<h2>Cell Spacing and Cell Padding</h2>
+
+		<p>In addition to amending the border size, it&rsquo;s possible to change the amount of padding within a table&rsquo;s cells, as well as the spacing between all the cells in a table. This is done with the cellpadding and cellspacing attributes, respectively. Below is a table with cellspacing and cellpadding attribute.</p>
+
+		<table cellspacing="20" cellpadding="40" border="1" width="100%">
+			<tr>
+				<td>Cell one</td>
+				<td>Cell two</td>
+			</tr>
+			<tr>
+				<td>Cell three</td>
+				<td>Cell four</td>
+			</tr>
+		</table>
+
+		<h2>Spanning Rows and Cells</h2>
+
+		<p>It&acute;s sometimes necessary for data to span multiple rows or columns. This is achieved via the rowspan and colspan attributes, respectively. In the following table, the first row has three cells. However, in the second row, the first cell spans two rows and the second cell spans two columns. This means the second row lacks a third cell, and the third row also only has two cells (whose contents align with the second and third cells of the top row).</p>
+
+		<table border="1" cellpadding="2" width="100%">
+			<tr>
+				<td>A cell</td>
+				<td>Another cell</td>
+				<td>Yet another cell!</td>
+			</tr>
+			<tr>
+				<td rowspan="2">A cell that spans two rows</td>
+				<td colspan="2">A cell that spans two columns</td>
+			</tr>
+			<tr>
+				<td>Another cell</td>
+				<td>The last cell</td>
+			</tr>
+		</table>
+	</body>
+</html>

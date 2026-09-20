@@ -1,0 +1,188 @@
+================================================================================
+                     JADWAL KULIAH SEMESTER GASAL 2026/2027
+                          FAKULTAS ILMU KOMPUTER
+                      UNIVERSITAS DHARMA AUB SURAKARTA
+--------------------------------------------------------------------------------
+   Program Studi : INFORMATIKA (INF)
+   Kelas         : A1  (Pagi)
+   Mulai         : 07 September 2026
+   Sumber        : "REVISI JADWAL PERKULIAHAN GASAL 2627 FIX.pdf" (4 halaman)
+================================================================================
+
+  KETERANGAN JAM
+  ---------------
+      Jam ke-1 : 08.00          Jam ke-4 : 16.30
+      Jam ke-2 : 10.30          Jam ke-5 : 18.30
+      Jam ke-3 : 13.00
+
+  (A1 / A2 = kelas Pagi  |  B1 = kelas Sore)
+
+
+================================================================================
+  SENIN
+================================================================================
+  08.00   PEMROGRAMAN WEB I                      Kode: 54305    (T1 / P2)
+          Dosen : Widyo Ari Utomo, S.T, M.T.
+          Ruang : Lab Pemro A
+
+  10.30   PEMROGRAMAN MOBILE                     Kode: 54507    (T1 / P2)
+          Dosen : Widyo Ari Utomo, S.T, M.T.
+          Ruang : Lab Multimedia
+
+
+================================================================================
+  SELASA
+================================================================================
+  08.00   BISNIS INFORMATIKA                     Kode: 54306    (T2)
+          Dosen : Agung Koes Indarto, S.Kom, MM
+          Ruang : Kelas A
+
+  10.30   JARINGAN KOMPUTER                      Kode: 54309    (T2 / P1)
+          Dosen : Izzan Julda D.E.P. Putra, ST, M.Kom
+          Ruang : Lab. Jaringan
+
+
+================================================================================
+  RABU
+================================================================================
+  (Kosong menurut daftarmu. Tapi lihat CATATAN no. 3 di bawah --
+   di PDF ada 4 kelas INF A1 yang terjadwal hari Rabu.)
+
+
+================================================================================
+  KAMIS
+================================================================================
+  08.00   KEAMANAN DATA DAN INFORMASI            Kode: 54320    (T2 / P1)
+          Dosen : Kristono, S.Kom, M.Kom
+          Ruang : Kelas A
+
+  10.30   BASIS DATA                             Kode: 54303    (T1 / P2)
+          Dosen : F.R. Dessyana Kardha, S.Kom, M.Eng   ("Bu Dessy")
+          Ruang : Lab. Pemro B
+
+  13.00   STRUKTUR DATA                          Kode: 54301    (T1 / P2)
+          Dosen : Adnan Terry Suseno, S.Kom, M.Kom
+          Ruang : Lab. Pemro A
+
+
+================================================================================
+  JUMAT
+================================================================================
+  10.30   PENDIDIKAN ANTI KORUPSI                Kode: 52718/54703   (T2)
+          Dosen : Dr. Anton Respati P., S.E, M.M, M.H
+          Ruang : Kelas C
+
+  16.30   BAHASA INDONESIA                       Kode: 54304    (T2)
+          Dosen : Drs. Purwoto, M.Pd
+          Ruang : Kelas B
+
+
+================================================================================
+  RINGKASAN KOREKSI  (draf lama  ->  yang benar)
+================================================================================
+  Mata Kuliah                 Draf Lama               Yang Benar
+  ------------------------------------------------------------------------------
+  Pemrograman Web I           Senin 08.00             Senin 08.00
+                              "Pemro A"               Lab Pemro A        (sama)
+
+  Pemrograman Mobile          Senin 08.00             SENIN 10.30
+                              (digabung dgn Web I)    Lab Multimedia     (PINDAH)
+
+  Keamanan Data & Informasi   Senin 10.30             KAMIS 08.00
+                              Kelas B                 Kelas A            (PINDAH)
+
+  Bisnis Informatika          Selasa 08.00            Selasa 08.00
+                              Kelas A                 Kelas A            (sama)
+
+  Jaringan Komputer           Selasa 10.30            Selasa 10.30
+                              Jaringan                Lab. Jaringan      (sama)
+
+  Sistem Basis Data           Kamis 11.00             KAMIS 10.30
+   -> utk INF A1 namanya                              Lab. Pemro B
+      "BASIS DATA" (54303)    Pemro A                 (nama, jam, ruang beda)
+
+  Struktur Data               Kamis 13.00             Kamis 13.00
+                              Pemro A                 Lab. Pemro A       (sama)
+
+  Pendidikan Anti Korupsi     Jumat 10.30             Jumat 10.30
+                              Kelas C                 Kelas C            (sama)
+
+  Bahasa Indonesia            Jumat 16.00             JUMAT 16.30
+                              Kelas A                 Kelas B            (jam & ruang beda)
+
+
+================================================================================
+  CATATAN PENTING
+================================================================================
+  1) "SISTEM BASIS DATA" vs "BASIS DATA"  -- ini yang paling sering ketuker
+     * "Sistem Basis Data" (kode 51311) itu punya prodi SI, BUKAN INF:
+           SI A1 -> Senin 10.30, Lab. Pemro B
+           SI A2 -> Jumat 08.00, Lab. Pemro B
+     * Untuk INF A1 nama mata kuliahnya "Basis Data" (kode 54303):
+           INF A1 -> KAMIS 10.30, Lab. Pemro B   <== ini punyamu
+           INF A2 -> Jumat 10.30, Lab. Pemro B
+     Dosennya sama: F.R. Dessyana Kardha ("Bu Dessy").
+
+  2) JAM 16.30 & 18.30
+     Di keterangan resmi, jam ke-4 dan jam ke-5 itu sesi sore.
+     Bahasa Indonesia A1 tetap terjadwal di jam ke-4 = 16.30 (bukan 16.00).
+
+  3) HARI RABU
+     Draf lamamu kosong, padahal di PDF ada 4 kelas INF A1 di hari Rabu:
+          08.00  Kewirausahaan Informatika   (54705)   Kelas B
+                 Agus Kristianto, S.Kom, M.Kom
+          08.00  Keamanan Komp./Sist Keamanan Komp. (52517/54706)  Lab. Jaringan
+                 Kristono, S.Kom, M.Kom
+          10.30  Praktek Dasar Komputer      (51111/52119/54111)  Lab. Pemro A
+                 Sutariyani, S.Kom, M.Kom
+          10.30  Video Editing               (54702)   Lab. Multimedia
+                 Budhi Sumboro, S.Kom, MM
+     Cek KRS-mu: kalau keempatnya memang mata kuliahmu, berarti Rabu
+     TIDAK kosong dan jadwalmu jadi 5 hari penuh.
+
+
+================================================================================
+  REFERENSI: MATA KULIAH INF A1 LAIN YANG ADA DI PDF
+  (tidak ada di daftarmu -- cek KRS, kalau ini mata kuliahmu berarti
+   harus ditambahkan ke jadwal)
+================================================================================
+  SENIN
+    08.00  Metodologi Penelitian          (52523/54510)      Kelas A
+    08.00  Algoritma dan Pemrograman      (51117/52116/54109) Lab. Pemro B
+    13.00  Internet Of Things             (54509)            Kelas A
+    13.00  Pendidikan Agama Katolik       (51103/52103/54103) R. Diskusi
+
+  SELASA
+    08.00  Machine Learning               (54508)            Ruang Diskusi
+    08.00  Data Mining                    (54710)            Lab. Pemro A
+    10.30  Bahasa Inggris I               (51114/52113/54106) Kelas B
+    10.30  Rekayasa Perangkat Lunak       (54505)            Kelas C
+    13.00  Interaksi Manusia dan Komputer (54704)            Kelas A
+    13.00  Sistem Operasi                 (51113/52117/54110) Lab. Pemro A
+    16.30  Etika Profesi                  (54709)            Kelas C
+
+  RABU
+    08.00  Kewirausahaan Informatika      (54705)            Kelas B
+    08.00  Keamanan Komp./Sist Keamanan Komp. (52517/54706)  Lab. Jaringan
+    10.30  Praktek Dasar Komputer         (51111/52119/54111) Lab. Pemro A
+    10.30  Video Editing                  (54702)            Lab. Multimedia
+
+  KAMIS
+    08.00  Etika Profesi                  (54605)            Kelas C
+    10.30  Kalkulus I                     (52114/54107)      Kelas B
+    10.30  Sistem Pendukung Keputusan     (51518/54506)      Kelas A
+    13.00  Pengantar Teknologi Informasi  (51115/52122/54112) Kelas B
+
+  JUMAT
+    08.00  Pendidikan Agama Islam         (51101/52101/54101) Kelas A
+    13.00  Mobile Computing               (54503)            Lab. Pemro B
+    13.00  Big Data Analytics             (54707)            Kelas C
+
+  Catatan: baris dengan prodi "SI/SK/INF" atau "SK/INF" adalah mata kuliah
+  bersama, jadi tetap diikuti oleh mahasiswa INF A1.
+
+
+================================================================================
+  Surakarta, 19 September 2026
+  Wakil Dekan I : F.R. Dessyana Kardha, S.Kom, M.Eng
+================================================================================
