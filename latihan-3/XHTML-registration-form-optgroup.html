@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	  <title>Advanced XHTML: Working with Forms</title>
+	</head>
+	<body>
+		<!-- 
+			Latihan 1: Introduction to XHTML
+			Nama Mhs.: 
+			1. R. Aura Auvarose Endica Saebani -  2257400040
+			2. Eka Bogi S - 2257400042
+			3. ⁠Muhammad Roy C.S - 2257400058
+			4. Muhamad surya P - 2257400044
+		-->
+
+		<h1>Formulir Registrasi Data Mahasiswa</h1>
+
+		<form action="" method="post">
+			<table cellspacing="4" cellpadding="4">
+				<tr>
+					<td><strong>Nomor Mahasiswa</strong></td>
+					<td><input type="text" name="nomhs" size="30" /></td>
+				</tr>
+				<tr>
+					<td><strong>Nama Mahasiswa</strong></td>
+					<td><input type="text" name="namamhs" size="30" /></td>
+				</tr>
+				<tr>
+					<td><strong>Jenis Kelamin</strong></td>
+					<td>
+						<input type="radio" name="jk" value="Laki-Laki" />Laki-Laki
+						<input type="radio" name="jk" value="Perempuan" />Perempuan
+					</td>
+				</tr>
+				<tr>
+					<td><strong>Program Studi</strong></td>
+					<td>
+						<select name="prodi">
+							<option value="" selected="selected">Pilihlah Program Studi Anda</option>
+							<optgroup label="Fakultas Teknologi Industri">
+								<option>Teknik Informatika</option>
+								<option>Teknik Industri</option>
+								<option>Teknik Industri Kelas Internasional</option>
+							</optgroup>
+							<optgroup label="Fakultas Teknik">
+								<option>Teknik Sipil</option>
+								<option>Teknik Arsitektur</option>
+							</optgroup>
+							<optgroup label="Fakultas Ilmu Sosial dan Ilmu Politik">
+								<option>Ilmu Komunikasi</option>
+								<option>Ilmu Sosiologi</option>
+							</optgroup>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><strong>Alamat Email</strong></td>
+					<td><input type="text" name="email" size="30" /></td>
+				</tr>
+				<tr>
+					<td><strong>Nomor Telepon</strong></td>
+					<td><input type="text" name="telepon" size="30" /></td>
+				</tr>
+				<tr>
+					<td><strong>Password</strong></td>
+					<td><input type="password" name="password" size="30" /></td>
+				</tr>
+				<tr>
+					<td><strong>Photo</strong></td>
+					<td><input type="file" name="photo" size="18" accept="image/gif, image/jpeg, image/png" /></td>
+				</tr>
+				<tr>
+					<td><strong>Nama Sekolah Asal (SMU)</strong></td>
+					<td><input type="text" name="namasmu" size="30" /></td>
+				</tr>
+				<tr>
+					<td><strong>Alamat Sekolah Asal (SMU)</strong></td>
+					<td><input type="text" name="alamatsmu" size="30" /></td>
+				</tr>
+				<tr>
+					<td><strong>Telepon Sekolah Asal (SMU)</strong></td>
+					<td><input type="text" name="teleponsmu" size="30" /></td>
+				</tr>
+				<tr>
+					<td valign="top"><p><strong>Hal Favorit</strong></p></td>
+					<td>
+						<p><strong>Musik</strong><br />
+						<input type="checkbox" name="musik" value="Pop" />Pop
+						<input type="checkbox" name="musik" value="Rock" />Rock
+						<input type="checkbox" name="musik" value="Jazz" />Jazz</p>
+						<p><strong>Film</strong><br />
+						<input type="checkbox" name="film" value="Drama" />Drama
+						<input type="checkbox" name="film" value="Action" />Action
+						<input type="checkbox" name="film" value="Sci-Fi" />Sci-Fi</p>
+						<p><strong>Makanan</strong><br />
+						<input type="checkbox" name="makanan" value="Seafood" />Seafood
+						<input type="checkbox" name="makanan" value="Tradisional" />Tradisional
+						<input type="checkbox" name="makanan" value="Fastfood" />Fastfood</p>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top"><strong>Resume</strong></td>
+					<td><textarea name="resume" rows="10" cols="23"></textarea></td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="submit" name="simpan" value="Simpan" /></td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

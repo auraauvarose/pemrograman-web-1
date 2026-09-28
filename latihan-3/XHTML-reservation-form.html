@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	  <title>Advanced XHTML: Working with Forms</title>
+	</head>
+	<body>
+		<!-- 
+			Latihan 1: Introduction to XHTML
+			Nama Mhs.: 
+			1. R. Aura Auvarose Endica Saebani -  2257400040
+			2. Eka Bogi S - 2257400042
+			3. ⁠Muhammad Roy C.S - 2257400058
+			4. Muhamad surya P - 2257400044
+		-->
+
+		<h1>Formulir Reservasi Kamar Hotel</h1>
+
+		<form action="" method="post">
+			<fieldset>
+				<legend>Data Pribadi</legend>
+				<p>
+					<label for="nama">Nama Lengkap</label><br />
+					<input type="text" id="nama" name="nama" size="30" />
+				</p>
+				<p>
+					<label for="identitas">Nomor Identitas (KTP)</label><br />
+					<input type="text" id="identitas" name="identitas" size="30" />
+				</p>
+				<p>
+					<label for="email">Alamat Email</label><br />
+					<input type="text" id="email" name="email" size="30" />
+				</p>
+				<p>
+					<label for="telepon">Nomor Telepon</label><br />
+					<input type="text" id="telepon" name="telepon" size="30" />
+				</p>
+				<p>
+					Jenis Kelamin<br />
+					<label><input type="radio" name="jk" value="Laki-Laki" /> Laki-Laki</label>
+					<label><input type="radio" name="jk" value="Perempuan" /> Perempuan</label>
+				</p>
+			</fieldset>
+
+			<fieldset>
+				<legend>Data Reservasi Kamar Hotel</legend>
+				<p>
+					<label for="tipekamar">Tipe Kamar</label><br />
+					<select id="tipekamar" name="tipekamar">
+						<option value="" selected="selected">Pilihlah Tipe Kamar</option>
+						<optgroup label="Standard">
+							<option>Standard Single</option>
+							<option>Standard Double</option>
+						</optgroup>
+						<optgroup label="Deluxe">
+							<option>Deluxe Twin</option>
+							<option>Deluxe King</option>
+						</optgroup>
+						<optgroup label="Suite">
+							<option>Junior Suite</option>
+							<option>Executive Suite</option>
+						</optgroup>
+					</select>
+				</p>
+				<p>
+					<label for="jumlahkamar">Jumlah Kamar</label><br />
+					<input type="text" id="jumlahkamar" name="jumlahkamar" size="5" />
+				</p>
+				<p>
+					<label for="checkin">Tanggal Check-in</label><br />
+					<input type="text" id="checkin" name="checkin" size="30" />
+				</p>
+				<p>
+					<label for="checkout">Tanggal Check-out</label><br />
+					<input type="text" id="checkout" name="checkout" size="30" />
+				</p>
+				<p>
+					<label for="jumlahtamu">Jumlah Tamu</label><br />
+					<select id="jumlahtamu" name="jumlahtamu">
+						<option>1 Orang</option>
+						<option>2 Orang</option>
+						<option>3 Orang</option>
+						<option>4 Orang</option>
+					</select>
+				</p>
+				<p>
+					<label for="permintaan">Permintaan Khusus</label><br />
+					<textarea id="permintaan" name="permintaan" rows="5" cols="30"></textarea>
+				</p>
+			</fieldset>
+
+			<fieldset>
+				<legend>Data Pembayaran</legend>
+				<p>
+					Metode Pembayaran<br />
+					<label><input type="radio" name="metode" value="Kartu Kredit" /> Kartu Kredit</label>
+					<label><input type="radio" name="metode" value="Transfer Bank" /> Transfer Bank</label>
+					<label><input type="radio" name="metode" value="Tunai" /> Tunai</label>
+				</p>
+				<p>
+					<label for="pemegang">Nama Pemegang Kartu</label><br />
+					<input type="text" id="pemegang" name="pemegang" size="30" />
+				</p>
+				<p>
+					<label for="nomorkartu">Nomor Kartu</label><br />
+					<input type="text" id="nomorkartu" name="nomorkartu" size="30" />
+				</p>
+				<p>
+					<label for="masaberlaku">Masa Berlaku</label><br />
+					<input type="text" id="masaberlaku" name="masaberlaku" size="10" />
+				</p>
+				<p>
+					<label for="cvv">CVV</label><br />
+					<input type="password" id="cvv" name="cvv" size="5" />
+				</p>
+			</fieldset>
+
+			<p>
+				<input type="submit" name="pesan" value="Pesan Sekarang" />
+			</p>
+		</form>
+	</body>
+</html>

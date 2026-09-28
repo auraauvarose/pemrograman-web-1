@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	  <title>Advanced XHTML: Working with Forms</title>
+	</head>
+	<body>
+		<!-- 
+			Latihan 1: Introduction to XHTML
+			Nama Mhs.: 
+			1. R. Aura Auvarose Endica Saebani -  2257400040
+			2. Eka Bogi S - 2257400042
+			3. ⁠Muhammad Roy C.S - 2257400058
+			4. Muhamad surya P - 2257400044
+		-->
+
+		<h1>Formulir Registrasi Data Mahasiswa</h1>
+
+		<form action="" method="post">
+			<fieldset>
+				<legend>Data Pribadi</legend>
+				<p>
+					<label for="nomhs">Nomor Mahasiswa</label><br />
+					<input type="text" id="nomhs" name="nomhs" size="30" />
+				</p>
+				<p>
+					<label for="namamhs">Nama Mahasiswa</label><br />
+					<input type="text" id="namamhs" name="namamhs" size="30" />
+				</p>
+				<p>
+					Jenis Kelamin<br />
+					<label><input type="radio" name="jk" value="Laki-Laki" /> Laki-Laki</label>
+					<label><input type="radio" name="jk" value="Perempuan" /> Perempuan</label>
+				</p>
+				<p>
+					<label for="prodi">Program Studi</label><br />
+					<select id="prodi" name="prodi">
+						<option>Teknik Informatika</option>
+						<option>Teknik Industri</option>
+					</select>
+				</p>
+				<p>
+					<label for="email">Alamat Email</label><br />
+					<input type="text" id="email" name="email" size="30" />
+				</p>
+				<p>
+					<label for="telepon">Nomor Telepon</label><br />
+					<input type="text" id="telepon" name="telepon" size="30" />
+				</p>
+				<p>
+					<label for="password">Password</label><br />
+					<input type="password" id="password" name="password" size="30" />
+				</p>
+				<p>
+					<label for="photo">Photo</label><br />
+					<input type="file" id="photo" name="photo" size="18" accept="image/gif, image/jpeg, image/png" />
+				</p>
+			</fieldset>
+
+			<fieldset>
+				<legend>Asal Sekolah SMU</legend>
+				<p>
+					<label for="namasmu">Nama Sekolah Asal (SMU)</label><br />
+					<input type="text" id="namasmu" name="namasmu" size="30" />
+				</p>
+				<p>
+					<label for="alamatsmu">Alamat Sekolah Asal (SMU)</label><br />
+					<input type="text" id="alamatsmu" name="alamatsmu" size="30" />
+				</p>
+				<p>
+					<label for="teleponsmu">Telepon Sekolah Asal (SMU)</label><br />
+					<input type="text" id="teleponsmu" name="teleponsmu" size="30" />
+				</p>
+			</fieldset>
+
+			<fieldset>
+				<legend>Hal Favorit</legend>
+				<p>
+					<strong>Musik</strong><br />
+					<label><input type="checkbox" name="musik" value="Pop" /> Pop</label>
+					<label><input type="checkbox" name="musik" value="Rock" /> Rock</label>
+					<label><input type="checkbox" name="musik" value="Jazz" /> Jazz</label>
+				</p>
+				<p>
+					<strong>Film</strong><br />
+					<label><input type="checkbox" name="film" value="Drama" /> Drama</label>
+					<label><input type="checkbox" name="film" value="Action" /> Action</label>
+					<label><input type="checkbox" name="film" value="Sci-Fi" /> Sci-Fi</label>
+				</p>
+				<p>
+					<strong>Makanan</strong><br />
+					<label><input type="checkbox" name="makanan" value="Seafood" /> Seafood</label>
+					<label><input type="checkbox" name="makanan" value="Tradisional" /> Tradisional</label>
+					<label><input type="checkbox" name="makanan" value="Fastfood" /> Fastfood</label>
+				</p>
+			</fieldset>
+
+			<fieldset>
+				<legend>Resume</legend>
+				<p>
+					<label for="resume">Resume</label><br />
+					<textarea id="resume" name="resume" rows="10" cols="23"></textarea>
+				</p>
+			</fieldset>
+
+			<p>
+				<input type="submit" name="simpan" value="Simpan" />
+			</p>
+		</form>
+	</body>
+</html>
