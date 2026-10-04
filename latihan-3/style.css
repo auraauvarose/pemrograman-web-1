@@ -1,0 +1,73 @@
+/* BLOK A - GAYA DASAR, dipakai di semua file */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #222222;
+    background-color: #30659b;
+    margin: 0;
+    padding: 24px;
+}
+
+h1 {
+    font-size: 22px;
+    color: #1b4f72;
+    background-color: #e8f1f8;
+    border-bottom: 3px solid #1b4f72;
+    padding: 12px 16px;
+}
+
+p {
+    margin: 0 0 12px 0;
+}
+
+fieldset {
+    background-color: #ffffff;
+    border: 2px solid #9db8d2;
+    margin: 0 0 16px 0;
+    padding: 16px 20px;
+}
+
+legend {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1b4f72;
+    background-color: #ffffff;
+    padding: 0 8px;
+}
+
+label {
+    color: #1b4f72;
+    font-weight: bold;
+    margin-right: 16px;
+}
+
+input, select, textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #222222;
+    background-color: #ffffff;
+    border: 1px solid #b8c4d0;
+    padding: 4px 6px;
+}
+
+textarea {
+    width: 340px;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #1b4f72;
+    background-color: #fbfdff;
+}
+
+input[type='submit'] {
+    background-color: #1b4f72;
+    color: #ffffff;
+    border: 1px solid #15406b;
+    padding: 8px 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type='submit']:hover {
+    background-color: #15406b;
+}
