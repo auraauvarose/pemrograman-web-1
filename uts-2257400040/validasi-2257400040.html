@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validasi Formulir Pendaftaran Seminar</title>
+
+  <!-- SOAL 4 : CSS eksternal -->
+  <link rel="stylesheet" href="validasi-2257400040.css">
+</head>
+<body>
+
+  <!--
+    UTS Pemrograman Web I - Kelas A1
+    Nama : R. Aura Auvarose Endica Saebani
+    NIM  : 2257400040
+    Soal 4 : Validasi Formulir dengan JavaScript (client-side)
+  -->
+
+  <main class="halaman">
+    <header class="judul">
+      <h1>Pendaftaran Peserta Seminar Teknologi Informasi</h1>
+      <p>Lengkapi data berikut. Kolom bertanda <span class="wajib">*</span> wajib diisi.</p>
+    </header>
+
+    <!-- Kotak pesan validasi (diisi oleh JavaScript) -->
+    <div id="kotakPesan" class="kotak-pesan" role="alert" aria-live="polite" hidden></div>
+
+    <!-- novalidate: validasi bawaan browser dimatikan, diganti JavaScript -->
+    <form id="formSeminar" action="#" method="post" novalidate>
+
+      <fieldset>
+        <legend>Data Pribadi</legend>
+
+        <div class="baris">
+          <label for="nama">Nama Lengkap <span class="wajib">*</span></label>
+          <div class="kolom">
+            <input type="text" id="nama" name="nama" placeholder="Contoh: R. Aura Auvarose">
+            <small class="pesan-galat" id="galat-nama"></small>
+          </div>
+        </div>
+
+        <div class="baris">
+          <label for="nim">Nomor Induk Mahasiswa (NIM) <span class="wajib">*</span></label>
+          <div class="kolom">
+            <input type="text" id="nim" name="nim" inputmode="numeric" placeholder="Contoh: 2257400040">
+            <small class="pesan-galat" id="galat-nim"></small>
+          </div>
+        </div>
+
+        <div class="baris">
+          <label for="email">Alamat Email <span class="wajib">*</span></label>
+          <div class="kolom">
+            <input type="text" id="email" name="email" placeholder="nama@contoh.com">
+            <small class="pesan-galat" id="galat-email"></small>
+          </div>
+        </div>
+
+        <div class="baris">
+          <label for="telepon">Nomor Telepon <span class="wajib">*</span></label>
+          <div class="kolom">
+            <input type="tel" id="telepon" name="telepon" placeholder="08xxxxxxxxxx">
+            <small class="pesan-galat" id="galat-telepon"></small>
+          </div>
+        </div>
+
+        <div class="baris">
+          <label for="usia">Usia</label>
+          <div class="kolom">
+            <input type="number" id="usia" name="usia" min="1" max="100" placeholder="Contoh: 20">
+            <small class="pesan-galat" id="galat-usia"></small>
+          </div>
+        </div>
+
+        <div class="baris">
+          <span class="label-teks">Jenis Kelamin <span class="wajib">*</span></span>
+          <div class="kolom">
+            <div class="grup-radio">
+              <label class="pilihan">
+                <input type="radio" name="jenis_kelamin" value="Laki-laki"> Laki-laki
+              </label>
+              <label class="pilihan">
+                <input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan
+              </label>
+            </div>
+            <small class="pesan-galat" id="galat-jk"></small>
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- ===== 2. Data Akademik & Seminar ===== -->
+      <fieldset>
+        <legend>Data Akademik &amp; Seminar</legend>
+
+        <div class="baris">
+          <label for="prodi">Program Studi <span class="wajib">*</span></label>
+          <div class="kolom">
+            <select id="prodi" name="prodi">
+              <option value="">-- Pilih Program Studi --</option>
+              <option value="Informatika">Informatika</option>
+              <option value="Sistem Informasi">Sistem Informasi</option>
+              <option value="Sistem Komputer">Sistem Komputer</option>
+              <option value="Teknologi Informasi">Teknologi Informasi</option>
+              <option value="Manajemen Informatika">Manajemen Informatika</option>
+            </select>
+            <small class="pesan-galat" id="galat-prodi"></small>
+          </div>
+        </div>
+
+        <div class="baris">
+          <label for="kategori">Kategori Seminar</label>
+          <div class="kolom">
+            <select id="kategori" name="kategori">
+              <option value="">-- Pilih Kategori Seminar --</option>
+              <option value="Kecerdasan Buatan &amp; Machine Learning">Kecerdasan Buatan &amp; Machine Learning</option>
+              <option value="Keamanan Siber">Keamanan Siber</option>
+              <option value="Pengembangan Web &amp; Mobile">Pengembangan Web &amp; Mobile</option>
+              <option value="Data Science &amp; Big Data">Data Science &amp; Big Data</option>
+              <option value="Internet of Things">Internet of Things</option>
+            </select>
+            <small class="pesan-galat" id="galat-kategori"></small>
+          </div>
+        </div>
+
+        <div class="baris">
+          <label for="alasan">Alasan Mengikuti Seminar</label>
+          <div class="kolom">
+            <textarea id="alasan" name="alasan" rows="5" placeholder="Tuliskan alasan Anda mengikuti seminar ini..."></textarea>
+            <small class="pesan-galat" id="galat-alasan"></small>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="tombol-grup">
+        <button type="submit" class="btn btn-daftar">Daftar</button>
+        <button type="reset" class="btn btn-reset">Reset</button>
+      </div>
+
+    </form>
+
+    <!-- ===== Penjelasan client vs server (ketentuan teknis no. 5) ===== -->
+    <section class="penjelasan">
+      <h2>Perbedaan Validasi Client-Side dan Server-Side</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Aspek</th>
+            <th>Validasi Client-Side</th>
+            <th>Validasi Server-Side</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tempat dijalankan</td>
+            <td>Di browser pengguna (JavaScript / atribut HTML)</td>
+            <td>Di web server (PHP, Node.js, Java, Python, dll.)</td>
+          </tr>
+          <tr>
+            <td>Kecepatan respons</td>
+            <td>Sangat cepat, tanpa request ke server</td>
+            <td>Lebih lambat karena data harus dikirim ke server</td>
+          </tr>
+          <tr>
+            <td>Beban server</td>
+            <td>Mengurangi beban server</td>
+            <td>Menambah beban server</td>
+          </tr>
+          <tr>
+            <td>Keamanan</td>
+            <td>Tidak aman &mdash; kode bisa dilihat dan dimatikan pengguna</td>
+            <td>Aman &mdash; kode tidak dapat diakses pengguna</td>
+          </tr>
+          <tr>
+            <td>Bisa dilewati?</td>
+            <td>Ya (matikan JavaScript / ubah request manual)</td>
+            <td>Tidak bisa dilewati</td>
+          </tr>
+          <tr>
+            <td>Fungsi utama</td>
+            <td>Kenyamanan pengguna: pesan galat langsung tampil</td>
+            <td>Penjaga data: memastikan data benar sebelum disimpan</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="kesimpulan">
+        <strong>Kesimpulan:</strong> keduanya tidak saling menggantikan. Validasi client-side
+        dipakai agar pengguna cepat tahu kesalahannya, sedangkan validasi server-side wajib
+        ada karena satu-satunya validasi yang benar-benar dapat dipercaya. Praktik terbaik:
+        <strong>pakai keduanya</strong>.
+      </p>
+    </section>
+  </main>
+
+  <!-- SOAL 4 : JavaScript eksternal -->
+  <script src="validasi-2257400040.js"></script>
+</body>
+</html>

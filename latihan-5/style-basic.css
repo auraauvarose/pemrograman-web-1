@@ -1,0 +1,45 @@
+/*
+	Advanced Cascading Style Sheet (CSS)
+	Topik Latihan:
+	- XXXXXXXXXXXXXX
+	No. Mhs.: xx 07 xxxxx
+	Nama Mhs.: XXXXXXX
+*/
+
+/* Element Selector for body */
+body {
+	margin: 0 auto;
+	font: normal 12px Arial, Helvetica, sans-serif;
+	background: #878787 url(images/background-drop-shadow.gif) 50% 0 repeat-y;
+	}
+
+/* ID Selector for wrapper */	
+#wrapper {
+		padding: 10px;
+		background: #ffffff;
+		width: 500px;
+		margin: 0 auto;
+		}
+
+		/* Class Selector for contentFooter */
+		.contentFooter {
+			padding: 4px 0 0 0;
+			font: bold 12px Arial, Helvetica, sans-serif;
+			text-align: center;
+			border-top: 1px solid #878787;
+		}
+		
+		/* Contextual Selector for h1 */
+		h1 {
+			font: bold 18px/10px "Lucida Sans Unicode", "Lucida Sans", Lucida;
+			padding-bottom: 7px;
+			margin-bottom: 7px;
+			border-bottom: 1px solid #cccccc;
+			color: #666666;
+		}
+
+		/* Contextual Selector for p */
+		p {
+			margin-bottom: 15px;
+			line-height: 150%;
+		}

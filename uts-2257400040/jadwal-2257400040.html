@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jadwal Perkuliahan Mahasiswa</title>
+
+  <!-- SOAL 1 : CSS eksternal (link) -->
+  <link rel="stylesheet" href="jadwal-2257400040.css">
+</head>
+<body>
+
+  <!--
+    UTS Pemrograman Web I - Kelas A1
+    Nama : R. Aura Auvarose Endica Saebani
+    NIM  : 2257400040
+    Soal 1 : Tabel Jadwal Perkuliahan
+  -->
+
+  <h1>Jadwal Perkuliahan Mahasiswa</h1>
+
+  <p class="subjudul">
+    Program Studi S1 Informatika &mdash; Kelas A1 (Pagi)<br>
+    Semester Gasal 2026/2027 &mdash; Universitas Dharma AUB Surakarta
+  </p>
+
+  <table>
+    <caption>Jadwal Kuliah Mingguan &mdash; R. Aura Auvarose Endica Saebani (2257400040)</caption>
+
+    <thead>
+      <tr>
+        <th scope="col">Hari</th>
+        <th scope="col">Waktu</th>
+        <th scope="col">Mata Kuliah</th>
+        <th scope="col">Ruang</th>
+        <th scope="col">Keterangan</th>
+      </tr>
+    </thead>
+
+    <!-- Satu <tbody> per hari, supaya sel "Hari" bisa digabung dengan rowspan -->
+    <tbody>
+      <tr>
+        <th scope="rowgroup" rowspan="2">Senin</th>
+        <td>08.00 &ndash; 10.30</td>
+        <td>Pemrograman Web I</td>
+        <td>Lab. Pemro A</td>
+        <td>Teori &amp; Praktik</td>
+      </tr>
+      <tr>
+        <td>10.30 &ndash; 13.00</td>
+        <td>Pemrograman Mobile</td>
+        <td>Lab. Multimedia</td>
+        <td>Teori &amp; Praktik</td>
+      </tr>
+    </tbody>
+
+    <tbody>
+      <tr>
+        <th scope="rowgroup" rowspan="2">Selasa</th>
+        <td>08.00 &ndash; 10.30</td>
+        <td>Bisnis Informatika</td>
+        <td>Kelas A</td>
+        <td>Teori</td>
+      </tr>
+      <tr>
+        <td>10.30 &ndash; 13.00</td>
+        <td>Jaringan Komputer</td>
+        <td>Lab. Jaringan</td>
+        <td>Teori &amp; Praktik</td>
+      </tr>
+    </tbody>
+
+    <tbody>
+      <tr>
+        <th scope="rowgroup" rowspan="3">Kamis</th>
+        <td>08.00 &ndash; 10.30</td>
+        <td>Keamanan Data dan Informasi</td>
+        <td>Kelas A</td>
+        <td>Teori &amp; Praktik</td>
+      </tr>
+      <tr>
+        <td>10.30 &ndash; 13.00</td>
+        <td>Basis Data</td>
+        <td>Lab. Pemro B</td>
+        <td>Teori &amp; Praktik</td>
+      </tr>
+      <tr>
+        <td>13.00 &ndash; 16.30</td>
+        <td>Struktur Data</td>
+        <td>Lab. Pemro A</td>
+        <td>Teori &amp; Praktik</td>
+      </tr>
+    </tbody>
+
+    <tbody>
+      <tr>
+        <th scope="rowgroup" rowspan="2">Jumat</th>
+        <td>10.30 &ndash; 13.00</td>
+        <td>Pendidikan Anti Korupsi</td>
+        <td>Kelas C</td>
+        <td>Teori</td>
+      </tr>
+      <tr>
+        <td>16.30 &ndash; 18.30</td>
+        <td>Bahasa Indonesia</td>
+        <td>Kelas B</td>
+        <td>Teori</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="catatan">
+    <strong>Catatan:</strong> Hari Rabu tidak ada jadwal kuliah pada KRS semester ini.
+    Total 9 sesi kuliah dalam satu minggu.
+  </p>
+
+</body>
+</html>

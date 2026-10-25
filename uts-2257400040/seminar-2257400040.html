@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Pendaftaran Seminar Teknologi Informasi</title>
+
+  <!-- SOAL 2 : CSS eksternal (link) -->
+  <link rel="stylesheet" href="seminar-2257400040.css">
+</head>
+<body>
+
+  <!--
+    UTS Pemrograman Web I - Kelas A1
+    Nama : R. Aura Auvarose Endica Saebani
+    NIM  : 2257400040
+    Soal 2 : Formulir Pendaftaran Seminar
+  -->
+
+  <main class="halaman">
+    <header class="judul">
+      <h1>Pendaftaran Peserta Seminar Teknologi Informasi</h1>
+      <p>Isi data di bawah ini dengan lengkap dan benar.</p>
+    </header>
+
+    <form action="#" method="post">
+
+      <!-- ===== 1. Data Pribadi ===== -->
+      <fieldset>
+        <legend>Data Pribadi</legend>
+
+        <div class="baris">
+          <label for="nama">Nama Lengkap <span class="wajib">*</span></label>
+          <input type="text" id="nama" name="nama" placeholder="Contoh: R. Aura Auvarose" required>
+        </div>
+
+        <div class="baris">
+          <label for="nim">Nomor Induk Mahasiswa (NIM) <span class="wajib">*</span></label>
+          <input type="text" id="nim" name="nim" placeholder="Contoh: 2257400040" required>
+        </div>
+
+        <div class="baris">
+          <label for="email">Alamat Email <span class="wajib">*</span></label>
+          <input type="email" id="email" name="email" placeholder="nama@contoh.com" required>
+        </div>
+
+        <div class="baris">
+          <label for="telepon">Nomor Telepon <span class="wajib">*</span></label>
+          <input type="tel" id="telepon" name="telepon" placeholder="08xxxxxxxxxx" required>
+        </div>
+
+        <div class="baris">
+          <label for="usia">Usia</label>
+          <input type="number" id="usia" name="usia" min="1" max="100" placeholder="Contoh: 20">
+        </div>
+
+        <!-- Radio button untuk jenis kelamin -->
+        <div class="baris">
+          <span class="label-teks">Jenis Kelamin <span class="wajib">*</span></span>
+          <div class="grup-radio">
+            <label class="pilihan">
+              <input type="radio" name="jenis_kelamin" value="Laki-laki" required> Laki-laki
+            </label>
+            <label class="pilihan">
+              <input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan
+            </label>
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- ===== 2. Data Akademik & Seminar ===== -->
+      <fieldset>
+        <legend>Data Akademik &amp; Seminar</legend>
+
+        <!-- Dropdown untuk program studi -->
+        <div class="baris">
+          <label for="prodi">Program Studi <span class="wajib">*</span></label>
+          <select id="prodi" name="prodi" required>
+            <option value="">-- Pilih Program Studi --</option>
+            <option value="Informatika">Informatika</option>
+            <option value="Sistem Informasi">Sistem Informasi</option>
+            <option value="Sistem Komputer">Sistem Komputer</option>
+            <option value="Teknologi Informasi">Teknologi Informasi</option>
+            <option value="Manajemen Informatika">Manajemen Informatika</option>
+          </select>
+        </div>
+
+        <!-- Pilihan kategori seminar (dropdown) -->
+        <div class="baris">
+          <label for="kategori">Kategori Seminar <span class="wajib">*</span></label>
+          <select id="kategori" name="kategori" required>
+            <option value="">-- Pilih Kategori Seminar --</option>
+            <option value="Kecerdasan Buatan &amp; Machine Learning">Kecerdasan Buatan &amp; Machine Learning</option>
+            <option value="Keamanan Siber">Keamanan Siber</option>
+            <option value="Pengembangan Web &amp; Mobile">Pengembangan Web &amp; Mobile</option>
+            <option value="Data Science &amp; Big Data">Data Science &amp; Big Data</option>
+            <option value="Internet of Things">Internet of Things</option>
+          </select>
+        </div>
+
+        <!-- Textarea untuk alasan -->
+        <div class="baris">
+          <label for="alasan">Alasan Mengikuti Seminar</label>
+          <textarea id="alasan" name="alasan" rows="5" placeholder="Tuliskan alasan Anda mengikuti seminar ini..."></textarea>
+        </div>
+      </fieldset>
+
+      <!-- ===== Tombol ===== -->
+      <div class="tombol-grup">
+        <button type="submit" class="btn btn-daftar">Daftar</button>
+        <button type="reset" class="btn btn-reset">Reset</button>
+      </div>
+
+    </form>
+  </main>
+
+</body>
+</html>

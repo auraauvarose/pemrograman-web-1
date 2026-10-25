@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>Working with Client-side Scripting (JavaScript): Form Validation</title>
+		<style type="text/css" media="screen">
+			/* <![CDATA[ */
+			@import url(style-forms.css);
+			/* ]]> */
+		</style>
+	</head>
+	<body>
+		<!-- 
+			Latihan 6: Working with Client-side Scripting (JavaScript)
+			No. Mhs.: xx 07 xxxxx
+			Nama Mhs.: XXXXXXX
+		-->	
+		<div id="wrapper">
+			<h1>Contact Us</h1>
+			<form id="contact" method="post" action="">
+				<table>
+					<tr>
+						<td class="labelcell"><label for="name">Nama</label></td>
+						<td class="fieldcell"><input type="text" id="name" name="name" /></td>
+					</tr>
+					<tr>
+						<td class="labelcell"><label for="email">E-mail</label></td>
+						<td class="fieldcell"><input type="text" id="email" name="email"/></td>
+					</tr>
+					<tr>
+						<td valign="top" class="labelcell"><label for="message">Pesan</label></td>
+						<td class="fieldcell"><textarea id="message" name="message" cols="30" rows="10"></textarea></td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="submit" id="submit" name="submit" value="Send" class="button" onclick="fn_ValForm()"/></td>
+					</tr>
+				</table>
+				</fieldset>
+			</form>	
+		</div>
+	</body>
+</html>
