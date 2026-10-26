@@ -5,14 +5,14 @@
 body {
   font-family: Arial, sans-serif;
   font-size: 14px;
-  background-color: #e8f0f8;
+  background-color: #f6f1e7;
   padding: 20px;
 }
 
 h1 {
   font-size: 20px;
   text-align: center;
-  color: #14375e;
+  color: #3d2b1f;
 }
 
 /* kotak formulir */
@@ -21,19 +21,19 @@ form {
   margin: 0 auto;
   padding: 20px;
   background-color: #ffffff;
-  border: 1px solid #c3d5e8;
+  border: 1px solid #dccfbb;
 }
 
 /* kelompok form */
 fieldset {
   margin-bottom: 16px;
   padding: 12px 16px;
-  border: 1px solid #cbd8e6;
+  border: 1px solid #dccfbb;
 }
 
 legend {
   font-weight: bold;
-  color: #1e5a96;
+  color: #8c4a2f;
 }
 
 /* label dan input */
@@ -50,7 +50,7 @@ textarea {
   width: 100%;
   padding: 6px;
   font-size: 13px;
-  border: 1px solid #b6c9dc;
+  border: 1px solid #cfbfa8;
 }
 
 /* radio button tidak perlu lebar penuh */
@@ -63,12 +63,12 @@ button {
   padding: 8px 20px;
   font-size: 14px;
   color: #ffffff;
-  background-color: #1e5a96;
+  background-color: #8c4a2f;
   border: none;
 }
 
 button[type="reset"] {
-  background-color: #7f8c8d;
+  background-color: #8f8578;
 }
 
 /* tampilan di layar kecil */

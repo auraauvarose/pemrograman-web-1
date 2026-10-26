@@ -5,19 +5,19 @@
 body {
   font-family: Arial, sans-serif;
   font-size: 14px;
-  background-color: #eef2f7;
+  background-color: #f6f1e7;
   padding: 20px;
 }
 
 h1 {
   font-size: 22px;
   text-align: center;
-  color: #14375e;
+  color: #3d2b1f;
 }
 
 p {
   text-align: center;
-  color: #555555;
+  color: #6f5f50;
 }
 
 /* tabel */
@@ -34,19 +34,19 @@ caption {
 
 /* header tabel: warna latar biru, teks putih, rata tengah */
 thead th {
-  background-color: #1e5a96;
+  background-color: #8c4a2f;
   color: #ffffff;
   font-size: 14px;
   text-align: center;
   padding: 10px;
-  border: 1px solid #164a7c;
+  border: 1px solid #6b3620;
 }
 
 /* isi sel: jarak isi sel + border + ukuran teks */
 td {
   padding: 8px 10px;
   font-size: 13px;
-  border: 1px solid #cbd8e6;
+  border: 1px solid #dccfbb;
   text-align: center;
 }
 
@@ -57,11 +57,11 @@ td:nth-child(3) {
 
 /* kolom Hari diberi warna berbeda */
 td[rowspan] {
-  background-color: #dce9f6;
+  background-color: #e9dfcd;
   font-weight: bold;
 }
 
 /* baris genap diberi warna latar berbeda agar mudah dibaca */
 tbody tr:nth-child(even) {
-  background-color: #f4f8fc;
+  background-color: #fbf7ef;
 }
