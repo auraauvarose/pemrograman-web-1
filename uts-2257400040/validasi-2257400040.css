@@ -1,357 +1,125 @@
-/* ============================================================
-   UTS Pemrograman Web I - Kelas A1
-   Nama : R. Aura Auvarose Endica Saebani
-   NIM  : 2257400040
-   Soal 4 : CSS Formulir Validasi (external CSS)
-   (turunan dari seminar-2257400040.css + gaya pesan validasi)
-   ============================================================ */
-
-* {
-  box-sizing: border-box;
-}
+/* Soal 4 - validasi-2257400040.css
+   Nama: R. Aura Auvarose Endica Saebani
+   NIM : 2257400040 */
 
 body {
-  margin: 0;
-  padding: 30px 15px;
-  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 14px;
-  line-height: 1.5;
-  color: #1f2d3d;
   background-color: #e8f0f8;
+  padding: 20px;
 }
 
-.halaman {
-  max-width: 760px;
-  margin: 0 auto;
-}
-
-/* ---------- Judul ---------- */
-.judul {
-  padding: 18px 20px;
+h1 {
+  font-size: 20px;
   text-align: center;
-  color: #ffffff;
-  background-color: #1e5a96;
-  border-radius: 8px 8px 0 0;
-}
-
-.judul h1 {
-  margin: 0 0 6px 0;
-  font-size: 21px;
-  line-height: 1.3;
-}
-
-.judul p {
-  margin: 0;
-  font-size: 13px;
-  color: #d6e6f7;
-}
-
-/* ---------- Kotak pesan validasi ---------- */
-.kotak-pesan {
-  margin: 0;
-  padding: 13px 18px;
-  font-size: 13.5px;
-  font-weight: 600;
-  border-left: 5px solid #1e5a96;
-  background-color: #eaf2fa;
   color: #14375e;
 }
 
-.kotak-pesan[hidden] {
-  display: none;
+h2 {
+  font-size: 17px;
+  color: #14375e;
+  margin-top: 26px;
 }
 
-/* pesan galat keseluruhan */
-.kotak-pesan.galat {
-  border-left-color: #c0392b;
-  background-color: #fdecea;
-  color: #922b21;
-}
-
-/* pesan sukses */
-.kotak-pesan.sukses {
-  border-left-color: #1e8449;
-  background-color: #e9f7ef;
-  color: #145a32;
-}
-
-/* pesan peringatan (usia < 17) */
-.kotak-pesan.peringatan {
-  border-left-color: #d68910;
-  background-color: #fef5e7;
-  color: #9c640c;
-}
-
-.kotak-pesan ul {
-  margin: 8px 0 0 0;
-  padding-left: 20px;
-}
-
-.kotak-pesan li {
-  font-weight: normal;
-  margin-bottom: 3px;
-}
-
-/* ---------- Kotak form ---------- */
+/* kotak formulir */
 form {
-  padding: 22px 24px 26px 24px;
+  width: 640px;
+  margin: 0 auto;
+  padding: 20px;
   background-color: #ffffff;
   border: 1px solid #c3d5e8;
-  border-top: none;
-  border-radius: 0 0 8px 8px;
-  box-shadow: 0 3px 10px rgba(20, 55, 94, 0.10);
 }
 
-/* ---------- Fieldset & legend ---------- */
 fieldset {
-  margin: 0 0 20px 0;
-  padding: 16px 18px 6px 18px;
+  margin-bottom: 16px;
+  padding: 12px 16px;
   border: 1px solid #cbd8e6;
-  border-radius: 6px;
-  background-color: #f9fbfd;
 }
 
 legend {
-  padding: 2px 10px;
-  font-size: 14px;
   font-weight: bold;
   color: #1e5a96;
-  background-color: #ffffff;
-  border: 1px solid #cbd8e6;
-  border-radius: 4px;
 }
 
-/* ---------- Baris form ---------- */
-.baris {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  gap: 10px;
-  margin-bottom: 14px;
-}
-
-.baris > label,
-.baris > .label-teks {
-  flex: 0 0 240px;
-  padding-top: 9px;
-  font-size: 13.5px;
-  font-weight: 600;
-  color: #2c3e50;
-}
-
-.kolom {
-  flex: 1 1 320px;
-  min-width: 0;
-}
-
-/* ukuran kolom input */
-.baris input[type="text"],
-.baris input[type="email"],
-.baris input[type="tel"],
-.baris input[type="number"],
-.baris select,
-.baris textarea {
-  width: 100%;
-  padding: 9px 11px;
-  font-family: inherit;
-  font-size: 13.5px;
-  color: #1f2d3d;
-  background-color: #ffffff;
-  border: 1px solid #b6c9dc;
-  border-radius: 4px;
-}
-
-.baris textarea {
-  min-height: 96px;
-  resize: vertical;
-}
-
-.baris input:focus,
-.baris select:focus,
-.baris textarea:focus {
-  outline: none;
-  border-color: #1e5a96;
-  box-shadow: 0 0 0 3px rgba(30, 90, 150, 0.15);
-}
-
-/* ---------- Pesan galat per kolom ---------- */
-.pesan-galat {
-  display: none;
-  margin-top: 4px;
-  font-size: 12px;
-  font-weight: 600;
-  color: #c0392b;
-}
-
-/* kelas .salah ditambahkan lewat JavaScript */
-.baris.salah .pesan-galat {
-  display: block;
-}
-
-.baris.salah input,
-.baris.salah select,
-.baris.salah textarea {
-  border-color: #c0392b;
-  background-color: #fdf3f2;
-}
-
-/* ---------- Radio button ---------- */
-.grup-radio {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 18px;
-  padding-top: 7px;
-}
-
-.pilihan {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 13.5px;
-  cursor: pointer;
-}
-
-.pilihan input[type="radio"] {
-  width: 16px;
-  height: 16px;
-  accent-color: #1e5a96;
-  cursor: pointer;
-}
-
-/* ---------- Tanda wajib ---------- */
-.wajib {
-  color: #c0392b;
-}
-
-/* ---------- Tombol ---------- */
-.tombol-grup {
-  display: flex;
-  gap: 12px;
-  padding-top: 4px;
-}
-
-.btn {
-  padding: 11px 26px;
-  font-family: inherit;
-  font-size: 14px;
+label {
   font-weight: bold;
-  letter-spacing: 0.3px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.15s ease, transform 0.1s ease;
 }
 
-.btn-daftar {
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 6px;
+  font-size: 13px;
+  border: 1px solid #b6c9dc;
+}
+
+input[type="radio"] {
+  width: auto;
+}
+
+/* tombol */
+button {
+  padding: 8px 20px;
+  font-size: 14px;
   color: #ffffff;
   background-color: #1e5a96;
+  border: none;
 }
 
-.btn-daftar:hover {
-  background-color: #164a7c;
+button[type="reset"] {
+  background-color: #7f8c8d;
 }
 
-.btn-reset {
-  color: #1f2d3d;
-  background-color: #dfe6ee;
-}
-
-.btn-reset:hover {
-  background-color: #cbd8e6;
-}
-
-.btn:active {
-  transform: translateY(1px);
-}
-
-/* ---------- Penjelasan client vs server ---------- */
-.penjelasan {
-  margin-top: 22px;
-  padding: 20px 22px;
-  background-color: #ffffff;
-  border: 1px solid #cbd8e6;
-  border-radius: 6px;
-}
-
-.penjelasan h2 {
-  margin: 0 0 14px 0;
-  font-size: 18px;
-  color: #1e5a96;
-  border-bottom: 2px solid #e3ecf5;
-  padding-bottom: 8px;
-}
-
-.penjelasan table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 14px;
-}
-
-.penjelasan th {
+/* kotak pesan validasi */
+#pesan {
+  width: 640px;
+  margin: 0 auto;
   padding: 10px;
-  font-size: 13px;
-  text-align: left;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* kelas yang ditambahkan JavaScript */
+.salah {
+  color: #922b21;
+  background-color: #fdecea;
+  border: 1px solid #c0392b;
+}
+
+.berhasil {
+  color: #145a32;
+  background-color: #e9f7ef;
+  border: 1px solid #1e8449;
+}
+
+/* tabel penjelasan */
+table {
+  width: 640px;
+  margin: 0 auto 20px auto;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+th {
+  padding: 8px;
   color: #ffffff;
   background-color: #1e5a96;
   border: 1px solid #164a7c;
 }
 
-.penjelasan td {
-  padding: 9px 10px;
-  font-size: 13px;
-  vertical-align: top;
+td {
+  padding: 8px;
   border: 1px solid #cbd8e6;
 }
 
-.penjelasan tbody tr:nth-child(even) {
-  background-color: #f4f8fc;
-}
-
-.kesimpulan {
-  margin: 0;
-  padding: 12px 14px;
-  font-size: 13px;
-  background-color: #eaf2fa;
-  border-left: 4px solid #1e5a96;
-}
-
-/* ---------- Layar kecil (HP) ---------- */
-@media screen and (max-width: 640px) {
-  body {
-    padding: 16px 8px;
-  }
-
-  form {
-    padding: 16px 14px 20px 14px;
-  }
-
-  .judul h1 {
-    font-size: 17px;
-  }
-
-  .baris > label,
-  .baris > .label-teks {
-    flex: 1 1 100%;
-    padding-top: 0;
-  }
-
-  .kolom {
-    flex: 1 1 100%;
-  }
-
-  .tombol-grup {
-    flex-direction: column;
-  }
-
-  .btn {
-    width: 100%;
-  }
-
-  .penjelasan {
-    padding: 14px;
-  }
-
-  .penjelasan table {
-    font-size: 12px;
+/* tampilan di layar kecil */
+@media screen and (max-width: 700px) {
+  form,
+  table,
+  #pesan {
+    width: auto;
   }
 }

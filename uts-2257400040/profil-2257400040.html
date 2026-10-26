@@ -5,177 +5,133 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Profil Organisasi Mahasiswa</title>
 
-  <!--
-    UTS Pemrograman Web I - Kelas A1
-    Nama : R. Aura Auvarose Endica Saebani
-    NIM  : 2257400040
-    Soal 3 : Layout Website Profil Organisasi
-    Catatan: sesuai ketentuan (f), CSS utama ditulis INTERNAL (embedded)
-             di dalam elemen <style> di bawah ini.
-  -->
+  <!-- Soal 3 - Layout Website Profil Organisasi
+       Nama: R. Aura Auvarose Endica Saebani
+       NIM : 2257400040
+       CSS ditulis INTERNAL (embedded) sesuai ketentuan (f) -->
 
   <style>
-    /* ==========================================================
-       SOAL 3 - EMBEDDED / INTERNAL CSS
-       ========================================================== */
-
-    * {
-      box-sizing: border-box;
-    }
-
     body {
       margin: 0;
-      padding: 0;
-      font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+      font-family: Arial, sans-serif;
       font-size: 14px;
-      line-height: 1.6;
-      color: #2c3e50;
       background-color: #eef2f7;
     }
 
-    /* ---------- HEADER : memenuhi lebar halaman ---------- */
+    /* header memenuhi lebar halaman */
     header {
       width: 100%;
-      padding: 26px 20px;
+      padding: 20px;
       text-align: center;
       color: #ffffff;
-      background: linear-gradient(135deg, #1e5a96, #2c81c9);
-      border-bottom: 4px solid #164a7c;
+      background-color: #1e5a96;
     }
 
     header h1 {
-      margin: 0 0 6px 0;
-      font-size: 26px;
-      letter-spacing: 0.5px;
+      margin: 0;
+      font-size: 22px;
     }
 
     header p {
-      margin: 0;
-      font-size: 13.5px;
-      color: #d6e6f7;
+      margin: 6px 0 0 0;
+      font-size: 13px;
     }
 
-    /* ---------- NAV : bar menu di bawah header ---------- */
+    /* menu */
     nav {
       width: 100%;
       background-color: #14375e;
     }
 
     nav ul {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 4px;
       margin: 0;
       padding: 0;
       list-style: none;
+      text-align: center;
+    }
+
+    nav li {
+      display: inline-block;
     }
 
     nav a {
       display: block;
-      padding: 12px 20px;
-      font-size: 13.5px;
-      font-weight: 600;
-      color: #d6e6f7;
+      padding: 10px 18px;
+      color: #ffffff;
       text-decoration: none;
-      transition: background-color 0.15s ease, color 0.15s ease;
     }
 
-    nav a:hover,
-    nav a:focus {
-      color: #ffffff;
+    nav a:hover {
       background-color: #1e5a96;
     }
 
-    /* ---------- WADAH : main + sidebar berdampingan ---------- */
+    /* wadah main + sidebar */
     .wadah {
-      display: flex;
-      align-items: flex-start;
-      gap: 20px;
-      width: 100%;
-      max-width: 1100px;
+      width: 980px;
       margin: 0 auto;
-      padding: 20px;
+      padding: 20px 0;
+      overflow: hidden;
     }
 
-    /* ---------- MAIN CONTENT ---------- */
+    /* main content di kiri */
     main {
-      flex: 1 1 auto;
-      min-width: 0;
-      padding: 22px 24px;
+      float: left;
+      width: 620px;
+      padding: 16px;
       background-color: #ffffff;
       border: 1px solid #cbd8e6;
-      border-radius: 6px;
     }
 
     main h2 {
-      margin: 0 0 14px 0;
-      font-size: 21px;
+      margin: 0 0 12px 0;
+      font-size: 19px;
       color: #1e5a96;
-      border-bottom: 2px solid #e3ecf5;
+      border-bottom: 1px solid #cbd8e6;
       padding-bottom: 8px;
     }
 
     main h3 {
-      margin: 22px 0 8px 0;
       font-size: 16px;
       color: #14375e;
     }
 
-    /* Gambar mengambang di kiri, teks mengalir di kanannya */
+    /* gambar di kiri, teks mengalir di kanannya */
     main img {
       float: left;
-      width: 260px;
-      max-width: 45%;
-      height: auto;
-      margin: 0 16px 10px 0;
-      border: 3px solid #cbd8e6;
-      border-radius: 4px;
+      width: 240px;
+      margin: 0 12px 8px 0;
+      border: 1px solid #cbd8e6;
     }
 
-    /* DROP CAP pada huruf pertama paragraf pertama (hanya paragraf pembuka) */
+    /* huruf pertama paragraf pertama dibuat besar (drop cap) */
     main section:first-of-type p:first-of-type::first-letter {
       float: left;
-      margin: 4px 8px 0 0;
-      padding: 6px 10px;
-      font-size: 46px;
-      font-weight: bold;
+      font-size: 40px;
       line-height: 1;
-      color: #ffffff;
-      background-color: #1e5a96;
-      border-radius: 3px;
+      margin-right: 6px;
+      color: #1e5a96;
+      font-weight: bold;
     }
 
     main p {
-      margin: 0 0 14px 0;
       text-align: justify;
     }
 
-    /* supaya float tidak menembus section berikutnya */
-    main section::after {
-      content: "";
-      display: block;
-      clear: both;
-    }
-
-    /* ---------- ASIDE / SIDEBAR ---------- */
+    /* sidebar di kanan */
     aside {
-      flex: 0 0 250px;
-      padding: 18px 16px;
+      float: right;
+      width: 280px;
+      padding: 16px;
       background-color: #ffffff;
       border: 1px solid #cbd8e6;
-      border-radius: 6px;
     }
 
     aside h2 {
       margin: 0 0 12px 0;
-      padding-bottom: 8px;
       font-size: 16px;
       color: #1e5a96;
-      border-bottom: 2px solid #e3ecf5;
     }
 
-    /* Menu dengan LATAR BELAKANG LINGKARAN pada tiap item */
     aside ul {
       margin: 0;
       padding: 0;
@@ -183,142 +139,90 @@
     }
 
     aside li {
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
-    aside li a {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 8px 10px;
-      font-size: 13.5px;
+    /* menu sidebar berlatar lingkaran */
+    aside a {
+      display: block;
+      padding: 8px 12px;
       color: #2c3e50;
       text-decoration: none;
+      background-color: #eef2f7;
       border-radius: 20px;
-      background-color: #f4f8fc;
-      transition: background-color 0.15s ease, color 0.15s ease;
     }
 
-    /* lingkaran kecil di depan tiap menu */
-    aside li a::before {
-      content: "";
-      flex: 0 0 auto;
-      width: 12px;
-      height: 12px;
-      background-color: #1e5a96;
-      border-radius: 50%;
-    }
-
-    aside li a:hover,
-    aside li a:focus {
+    aside a:hover {
       color: #ffffff;
       background-color: #1e5a96;
     }
 
-    aside li a:hover::before,
-    aside li a:focus::before {
-      background-color: #ffffff;
-    }
-
-    /* ---------- FOOTER : memenuhi lebar halaman ---------- */
+    /* footer memenuhi lebar halaman */
     footer {
       width: 100%;
-      padding: 18px 20px;
+      padding: 16px;
       text-align: center;
-      font-size: 13px;
-      color: #d6e6f7;
+      color: #ffffff;
       background-color: #14375e;
-      border-top: 4px solid #1e5a96;
     }
 
     footer p {
-      margin: 0;
+      margin: 4px 0;
     }
 
-    /* ==========================================================
-       MEDIA QUERY - tampilan smartphone
-       ========================================================== */
+    /* tampilan smartphone */
     @media screen and (max-width: 800px) {
-
-      /* main & sidebar jadi satu kolom, bertumpuk */
       .wadah {
-        flex-direction: column;
-        gap: 14px;
-        padding: 14px;
+        width: auto;
+        padding: 10px;
       }
 
+      /* main dan sidebar jadi satu kolom */
       main,
       aside {
-        flex: 1 1 auto;
-        width: 100%;
+        float: none;
+        width: auto;
+        margin-bottom: 12px;
       }
 
-      aside {
-        flex: 0 0 auto;
+      main img {
+        float: none;
+        width: 100%;
+        margin: 0 0 10px 0;
       }
 
       header h1 {
-        font-size: 20px;
-      }
-
-      main {
-        padding: 16px 16px;
-      }
-
-      main h2 {
         font-size: 18px;
-      }
-
-      /* gambar tidak lagi mengambang, tampil penuh */
-      main img {
-        float: none;
-        display: block;
-        width: 100%;
-        max-width: 100%;
-        margin: 0 0 14px 0;
-      }
-
-      main p {
-        text-align: left;
-      }
-
-      nav a {
-        padding: 10px 14px;
-        font-size: 13px;
       }
     }
   </style>
 
-  <!-- CSS tambahan (print) - lihat profil-2257400040.css -->
+  <!-- file CSS tambahan, hanya untuk mencetak halaman -->
   <link rel="stylesheet" href="profil-2257400040.css" media="print">
 </head>
 <body>
 
-  <!-- ================= HEADER ================= -->
   <header>
     <h1>Himpunan Mahasiswa Informatika</h1>
-    <p>Universitas Dharma AUB Surakarta &mdash; Kabinet Aksi Nyata 2026/2027</p>
+    <p>Universitas Dharma AUB Surakarta</p>
   </header>
 
-  <!-- ================= NAV ================= -->
   <nav>
     <ul>
-      <li><a href="#tentang">Tentang Kami</a></li>
-      <li><a href="#visi">Visi &amp; Misi</a></li>
-      <li><a href="#program">Program Kerja</a></li>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#visi">Visi</a></li>
+      <li><a href="#program">Program</a></li>
       <li><a href="#kontak">Kontak</a></li>
     </ul>
   </nav>
 
-  <!-- ================= WADAH : MAIN + ASIDE ================= -->
   <div class="wadah">
 
-    <!-- ---------- MAIN CONTENT ---------- -->
     <main>
       <section id="tentang">
         <h2>Lorem Ipsum Dolor Sit Amet</h2>
 
-        <img src="images/merapi-at-sunset.jpg" alt="Gunung Merapi di waktu sunset">
+        <img src="images/merapi-at-sunset.jpg" alt="Gunung Merapi">
 
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo,
           ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio
@@ -328,47 +232,39 @@
         <p>Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero.
           Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget
           euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim
-          nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla
-          consequat libero cursus venenatis. Nam magna enim, accumsan eu, blandit
-          sed, blandit a, eros.</p>
+          nibh eget ipsum.</p>
       </section>
 
       <section id="visi">
-        <h3>Visi &amp; Misi</h3>
+        <h3>Visi dan Misi</h3>
         <p>Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida,
           diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede
-          nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam
-          molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis.</p>
+          nibh eget odio.</p>
       </section>
 
       <section id="program">
         <h3>Program Kerja</h3>
         <p>Donec eget sem sit amet ligula viverra gravida. Etiam vehicula urna vel
           turpis. Suspendisse sagittis ante a urna. Morbi a est quis orci consequat
-          rutrum. Nullam egestas feugiat felis. Integer adipiscing semper ligula.
-          Nunc molestie, nisl sit amet cursus convallis, sapien lectus pretium metus,
-          vitae pretium enim wisi id lectus.</p>
+          rutrum.</p>
       </section>
     </main>
 
-    <!-- ---------- ASIDE / SIDEBAR ---------- -->
     <aside>
       <h2>Menu</h2>
       <ul>
         <li><a href="#tentang">Profil Organisasi</a></li>
-        <li><a href="#visi">Visi &amp; Misi</a></li>
+        <li><a href="#visi">Visi dan Misi</a></li>
         <li><a href="#program">Program Kerja</a></li>
-        <li><a href="#kontak">Struktur Pengurus</a></li>
-        <li><a href="#kontak">Kontak &amp; Media Sosial</a></li>
+        <li><a href="#kontak">Kontak</a></li>
       </ul>
     </aside>
 
   </div>
 
-  <!-- ================= FOOTER ================= -->
   <footer id="kontak">
-    <p>&copy; 2026 Himpunan Mahasiswa Informatika &mdash; Universitas Dharma AUB Surakarta</p>
-    <p>NIM 2257400040 &mdash; R. Aura Auvarose Endica Saebani</p>
+    <p>&copy; 2026 Himpunan Mahasiswa Informatika</p>
+    <p>NIM 2257400040 - R. Aura Auvarose Endica Saebani</p>
   </footer>
 
 </body>

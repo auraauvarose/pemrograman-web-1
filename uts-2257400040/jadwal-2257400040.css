@@ -1,130 +1,67 @@
-/* ============================================================
-   UTS Pemrograman Web I - Kelas A1
-   Nama : R. Aura Auvarose Endica Saebani
-   NIM  : 2257400040
-   Soal 1 : CSS Tabel Jadwal Perkuliahan (external CSS)
-   ============================================================ */
-
-/* ---------- Dasar halaman ---------- */
-* {
-  box-sizing: border-box;
-}
+/* Soal 1 - jadwal-2257400040.css
+   Nama: R. Aura Auvarose Endica Saebani
+   NIM : 2257400040 */
 
 body {
-  margin: 0;
-  padding: 30px 15px;
-  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 14px;
-  line-height: 1.5;
-  color: #1f2d3d;
   background-color: #eef2f7;
+  padding: 20px;
 }
 
 h1 {
-  margin: 0 0 6px 0;
-  font-size: 24px;
+  font-size: 22px;
   text-align: center;
   color: #14375e;
-  letter-spacing: 0.3px;
 }
 
-.subjudul {
-  margin: 0 0 22px 0;
-  font-size: 13px;
+p {
   text-align: center;
-  color: #5b6b7c;
+  color: #555555;
 }
 
-/* ---------- Tabel ---------- */
+/* tabel */
 table {
   width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  border-collapse: collapse;          /* border menyatu, tidak dobel */
+  border-collapse: collapse;
   background-color: #ffffff;
-  box-shadow: 0 2px 8px rgba(20, 55, 94, 0.12);
 }
 
 caption {
-  padding: 10px 0;
-  font-size: 13px;
+  padding: 8px;
   font-style: italic;
-  color: #4a5a6b;
-  caption-side: top;
 }
 
-/* Header tabel : warna latar berbeda + teks putih */
+/* header tabel: warna latar biru, teks putih, rata tengah */
 thead th {
-  padding: 12px 10px;                  /* jarak isi sel */
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 0.4px;
-  text-align: center;                  /* perataan data */
-  color: #ffffff;
   background-color: #1e5a96;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
   border: 1px solid #164a7c;
 }
 
-/* Isi sel */
-tbody td,
-tbody th {
-  padding: 10px 12px;                  /* jarak isi sel */
+/* isi sel: jarak isi sel + border + ukuran teks */
+td {
+  padding: 8px 10px;
   font-size: 13px;
   border: 1px solid #cbd8e6;
-  vertical-align: middle;
-}
-
-/* Kolom "Hari" (th di dalam tbody) */
-tbody th {
-  font-weight: bold;
   text-align: center;
-  color: #14375e;
+}
+
+/* kolom Mata Kuliah rata kiri */
+td:nth-child(3) {
+  text-align: left;
+}
+
+/* kolom Hari diberi warna berbeda */
+td[rowspan] {
   background-color: #dce9f6;
-  white-space: nowrap;
+  font-weight: bold;
 }
 
-/* Perataan per kolom */
-tbody td:nth-child(2) { text-align: center; white-space: nowrap; } /* Waktu   */
-tbody td:nth-child(3) { text-align: left; }                        /* Matkul  */
-tbody td:nth-child(4) { text-align: center; }                      /* Ruang   */
-tbody td:nth-child(5) { text-align: center; }                      /* Ket.    */
-
-/* Baris genap diberi latar berbeda agar mudah dibaca (zebra) */
-tbody:nth-of-type(even) tr {
+/* baris genap diberi warna latar berbeda agar mudah dibaca */
+tbody tr:nth-child(even) {
   background-color: #f4f8fc;
-}
-
-/* Efek hover: baris yang disorot jadi lebih terang */
-tbody tr:hover {
-  background-color: #fff6d9;
-}
-
-/* ---------- Catatan kaki ---------- */
-.catatan {
-  max-width: 1000px;
-  margin: 16px auto 0 auto;
-  padding: 10px 14px;
-  font-size: 12.5px;
-  color: #4a5a6b;
-  background-color: #ffffff;
-  border-left: 4px solid #1e5a96;
-}
-
-/* ---------- Layar kecil (HP) ---------- */
-@media screen and (max-width: 700px) {
-  body {
-    padding: 16px 8px;
-    font-size: 13px;
-  }
-
-  h1 {
-    font-size: 19px;
-  }
-
-  thead th,
-  tbody td,
-  tbody th {
-    padding: 8px 6px;
-    font-size: 12px;
-  }
 }

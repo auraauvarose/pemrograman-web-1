@@ -1,20 +1,13 @@
-/* ============================================================
-   UTS Pemrograman Web I - Kelas A1
-   Nama : R. Aura Auvarose Endica Saebani
-   NIM  : 2257400040
-   Soal 3 : profil-2257400040.css
-   ------------------------------------------------------------
-   CATATAN:
-   Ketentuan (f) Soal 3 mewajibkan CSS utama ditulis EMBEDDED /
-   INTERNAL, sehingga seluruh styling tampilan layar ada di dalam
-   elemen <style> pada profil-2257400040.html.
-   File ini dihubungkan dengan media="print" dan hanya dipakai
-   saat halaman dicetak / disimpan sebagai PDF.
-   ============================================================ */
+/* Soal 3 - profil-2257400040.css
+   Nama: R. Aura Auvarose Endica Saebani
+   NIM : 2257400040
+
+   Ketentuan (f) Soal 3 mewajibkan CSS utama ditulis INTERNAL,
+   jadi semua tampilan layar ada di dalam <style> pada file HTML.
+   File ini hanya dipakai saat halaman dicetak. */
 
 @media print {
 
-  /* sembunyikan navigasi, tidak perlu saat dicetak */
   nav,
   aside {
     display: none;
@@ -22,43 +15,21 @@
 
   body {
     background-color: #ffffff;
-    color: #000000;
-    font-size: 12pt;
   }
 
   header,
   footer {
     color: #000000;
     background: none;
-    border-color: #000000;
   }
 
   .wadah {
-    display: block;
-    max-width: 100%;
-    padding: 0;
+    width: auto;
   }
 
   main {
+    float: none;
+    width: auto;
     border: none;
-    padding: 0;
-  }
-
-  main img {
-    float: left;
-    width: 45%;
-    margin: 0 12pt 8pt 0;
-  }
-
-  main p:first-of-type::first-letter {
-    color: #000000;
-    background: none;
-    padding: 0;
-    font-size: 36pt;
-  }
-
-  a {
-    color: #000000;
-    text-decoration: none;
   }
 }
